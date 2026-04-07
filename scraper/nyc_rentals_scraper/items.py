@@ -1,0 +1,28 @@
+import scrapy
+
+
+class RentalListingItem(scrapy.Item):
+    id = scrapy.Field()
+    title = scrapy.Field()
+    description = scrapy.Field()
+    borough = scrapy.Field()
+    neighborhood = scrapy.Field()
+    address = scrapy.Field()
+    price = scrapy.Field()
+    beds = scrapy.Field()
+    baths = scrapy.Field()
+    sqft = scrapy.Field()
+    property_type = scrapy.Field()
+    available_from = scrapy.Field()
+    lease_term = scrapy.Field()
+    image_url = scrapy.Field()
+    listing_url = scrapy.Field()
+    latitude = scrapy.Field()
+    longitude = scrapy.Field()
+    pet_friendly = scrapy.Field()
+    furnished = scrapy.Field()
+    has_doorman = scrapy.Field()
+    has_laundry = scrapy.Field()
+    near_subway = scrapy.Field()
+    allows_guarantors = scrapy.Field()
+    featured = scrapy.Field()

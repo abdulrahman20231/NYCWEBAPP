@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: rentscout-nyc
+    runtime: docker
+    rootDir: nyc_rentals_platform
+    plan: free
+    healthCheckPath: /health
