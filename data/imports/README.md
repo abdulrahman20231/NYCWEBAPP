@@ -4,6 +4,7 @@ Drop additional source feeds in this folder to merge them into the app automatic
 
 Supported files:
 
+- `zillow_listings.csv`
 - `realtor_listings.csv`
 - `airbnb_listings.csv`
 
@@ -16,6 +17,7 @@ id,source_key,source_label,title,description,borough,neighborhood,address,price,
 Notes:
 
 - `source_key` can be `realtor` or `airbnb`
+- `zillow_listings.csv` uses the older imported Zillow schema already supported by the app
 - `source_label` is optional; if blank the app will infer it
 - rows with missing/zero price are ignored
 - rows with missing `listing_url` are ignored

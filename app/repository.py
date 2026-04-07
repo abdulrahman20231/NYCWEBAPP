@@ -11,12 +11,11 @@ from .models import Listing, ListingFilters, ListingsSnapshot
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-WORKSPACE_DIR = BASE_DIR.parent
 DATA_DIR = BASE_DIR / "data"
 IMPORTS_DIR = DATA_DIR / "imports"
 SEED_DATA_FILE = DATA_DIR / "listings.csv"
 SCRAPED_DATA_FILE = DATA_DIR / "scraped_listings.csv"
-ZILLOW_FEED_FILE = WORKSPACE_DIR / "nyc_rent_scraper" / "data" / "listings.csv"
+ZILLOW_FEED_FILE = IMPORTS_DIR / "zillow_listings.csv"
 REALTOR_IMPORT_FILE = IMPORTS_DIR / "realtor_listings.csv"
 AIRBNB_IMPORT_FILE = IMPORTS_DIR / "airbnb_listings.csv"
 DEFAULT_IMAGE_URL = (
